@@ -1,0 +1,267 @@
+.ba-map-wrapper {
+    position: relative;
+}
+
+#map {
+    height: 600px;
+
+    @include breakpoint(medium) {
+        height: 700px;
+    }
+
+    @include breakpoint(large) {
+        height: 900px;
+    }
+}
+
+.ba-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 25px;
+
+    @include breakpoint(medium) {
+        padding-top: 55px;
+    }
+
+    background: rgba(#9f9acf, .7);
+
+    .ba-title {
+
+        @include breakpoint(large) {
+            margin-bottom: 270px;
+        }
+
+        margin-bottom: 30px;
+
+        h3 {
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        svg {
+            margin-bottom: 10px;
+
+            transform: scale(0.7, 0.7);
+
+            @include breakpoint(medium) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+
+
+    form {
+
+        input:focus,
+        textarea:focus {
+            padding-left: 5px;
+            background: rgba(235, 235, 235, 0.5);
+            border: none;
+
+            @include breakpoint(medium) {
+                padding-left: 20px;
+            }
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            padding-left: 5px;
+
+            @include breakpoint(medium) {
+                padding-left: 20px;
+            }
+
+            color: #fefefe;
+            font-style: italic;
+        }
+
+        input,
+        textarea {
+            background-color: rgba(235, 235, 235, .5);
+            font-size: 18px;
+            border: none;
+        }
+
+        textarea {
+            margin-bottom: 20px;
+
+            @include breakpoint(medium) {
+                margin-bottom: 55px;
+            }
+        }
+
+        input {
+            margin: 0;
+            padding: 0;
+
+            @include breakpoint(medium) {
+                width: 250px;
+            }
+
+            @include breakpoint(large) {
+                width: 414px;
+            }
+
+            width: 100px;
+        }
+
+        div {
+            input+input {
+                margin-left: 32px;
+            }
+
+            margin-bottom: 27px;
+        }
+
+        button {
+            background: #9f9acf;
+            padding: 28px;
+            font-size: 20px;
+            font-family: "Proxima Nova";
+            border-radius: 4px;
+            box-shadow: 0 4px 2px -2px rgba(black, .8);
+            display: block;
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: 0 0 5px 1px rgba(black, .8);
+                color: rgba(black, .8);
+                text-shadow: 0 0 3px white;
+            }
+        }
+    }
+
+    .ba-upbutton {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+
+        @include breakpoint(large) {
+            right: 5%;
+        }
+
+        margin: 0;
+        padding: 0;
+
+        width: 40px;
+        height: 40px;
+
+        @include breakpoint(medium) {
+            width: 84px;
+            height: 84px;
+        }
+
+        text-align: center;
+        background: #9f9acf;
+        color: #e6e6e6;
+
+        &:hover {
+            color: inherit;
+        }
+
+        svg {
+            margin-top: 10px;
+            transform: scale(0.7, 0.7);
+
+            @include breakpoint(medium) {
+                margin-top: 30px;
+                transform: scale(1, 1);
+            }
+
+            @include breakpoint(medium) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    overflow: hidden;
+
+    .ba-popup {
+        height: 40px;
+
+        @include breakpoint(medium) {
+            height: 91px;
+        }
+
+        transition: transform .3s ease;
+
+        &-wrapper {
+            position: absolute;
+            top: 130px;
+
+            @include breakpoint(medium) {
+                top: 219px;
+            }
+
+            right: 0;
+            transform: translateX(257px);
+        }
+
+        &:hover {
+            transform: translateX(-257px);
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        &-svgbox {
+            background: #9f9acf;
+            width: 40px;
+
+            svg {
+                @include breakpoint(medium down) {
+                    transform: scale(0.7, 0.7);
+                }
+            }
+
+            @include breakpoint(medium) {
+                width: 91px;
+            }
+        }
+
+        &-descriptionbox {
+            height: 100%;
+            width: 257px;
+
+            padding: 13px 40px;
+
+            &--mobile {
+                padding: 2px 5px;
+            }
+
+            @include breakpoint(medium) {
+                padding: 17px 40px;
+            }
+
+            background: rgba(white, .8);
+            margin: 0;
+            font-size: 16px;
+
+            @include breakpoint(medium) {
+                font-size: 18px;
+            }
+
+            line-height: 1.2;
+
+            a {
+                color: inherit;
+
+                @include breakpoint(medium) {
+                    line-height: 57px;
+                }
+            }
+        }
+    }
+}

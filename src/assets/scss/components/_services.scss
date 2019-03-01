@@ -1,0 +1,43 @@
+.ba-services-item {
+    padding: 25px 5px;
+
+    @include breakpoint(medium) {
+        padding: 99px 65px 134px;
+
+        &--big {
+            padding: 116px 15px 20px;
+
+            h4 {
+                padding-bottom: 118px;
+            }
+        }
+    }
+
+    q,
+    cite {
+        font-size: 18px;
+    }
+
+    svg {
+        margin-bottom: 30px;
+    }
+
+    background-color: #ebebeb;
+
+    &--dark {
+        background-color: #dbdbdb;
+    }
+}
+
+.services-bg {
+    background: rgb(180, 167, 201) url('../img/services_bg.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    cite {
+
+        &:before {
+            display: none;
+        }
+    }
+}

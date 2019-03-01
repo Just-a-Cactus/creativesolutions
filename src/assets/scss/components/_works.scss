@@ -1,0 +1,102 @@
+.ba-works-wrapper {
+    background: rgb(180, 167, 201) url('../img/works_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.ba-works-wrapper {
+    padding-top: 20px;
+
+    @include breakpoint(medium) {
+        padding-top: 50px;
+    }
+
+    @include breakpoint(medium) {
+
+        svg {
+            margin-bottom: 35px;
+        }
+    }
+
+    svg {
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 600;
+
+        @include breakpoint(medium) {
+            padding-bottom: 68px;
+        }
+
+        padding-bottom: 15px;
+    }
+}
+
+.worksSliderDots {
+    padding: 10px 0 20px;
+
+    @include breakpoint(medium) {
+        padding: 46px 0 49px 0;
+    }
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    button {
+        margin: 5px;
+        font-size: 0;
+        background: transparent;
+        width: 10px;
+        height: 10px;
+        border: 2px solid white;
+        border-radius: 20px;
+        outline: none;
+    }
+
+    .slick-active {
+        button {
+            background-color: white;
+        }
+    }
+}
+
+.worksSliderPrev,
+.worksSliderNext {
+    position: absolute;
+    outline: none;
+    top: 40%;
+
+    @include breakpoint(medium) {
+        top: 50%;
+    }
+}
+
+.worksSliderPrev {
+    left: 5px;
+}
+
+.worksSliderNext {
+    right: 5px;
+}
+
+.galery {
+    font-size: 20px;
+    color: white;
+    border: solid 1px white;
+    padding: 16px 48px;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    @include breakpoint(medium) {
+        margin-bottom: 60px;
+    }
+
+
+    &:hover {
+        color: black;
+        border-color: black;
+    }
+}

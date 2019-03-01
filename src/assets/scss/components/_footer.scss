@@ -1,0 +1,32 @@
+footer {
+    color: white;
+    font-size: 18px;
+    background: #9f9acf;
+
+    padding: 25px 0 25px 0;
+
+    @include breakpoint(medium) {
+        padding: 75px 0 78px 0;
+    }
+}
+
+.footer-wrapper {
+    @include breakpoint(medium) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.social {
+    a {
+        color: rgb(235, 235, 235);
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a+a {
+        padding-left: 20px;
+    }
+}

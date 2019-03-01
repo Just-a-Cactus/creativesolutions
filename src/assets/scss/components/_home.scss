@@ -1,0 +1,22 @@
+.ba-home-wrapper {
+    background: rgb(180, 167, 201) url('../img/intro_bg.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.ba-home-main-text {
+    padding-top: 35vh;
+}
+
+.sub-title-h1 {
+    font-family: $body-font-family;
+    font-style: italic;
+    font-size: 20px;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    @include breakpoint(medium) {
+        font-size: 30px;
+    }
+}

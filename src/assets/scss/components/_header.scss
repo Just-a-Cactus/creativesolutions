@@ -1,0 +1,31 @@
+.ba-header {
+    padding-top: 36px;
+
+    .menu {
+        display: flex;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $header-font-family;
+
+        a {
+            border-bottom: 2px solid transparent;
+        }
+
+        a:hover {
+            border-bottom-color: white;
+        }
+
+        @include breakpoint(small down) {
+            display: none;
+        }
+    }
+
+    svg[data-toggle="offCanvas"] {
+        display: inline;
+        margin-left: -20px;
+
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+}

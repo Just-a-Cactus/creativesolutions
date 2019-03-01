@@ -1,0 +1,24 @@
+.white {
+    color: white;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.pts {
+    font-family: $body-font-family;
+}
+
+.menu {
+    li {
+        a {
+            outline-color: white;
+            color: white;
+        }
+    }
+}

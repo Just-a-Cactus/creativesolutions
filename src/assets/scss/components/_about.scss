@@ -1,0 +1,62 @@
+.ba-about-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include breakpoint(medium) {
+        padding-top: 124px;
+        padding-bottom: 120px;
+    }
+}
+
+.ba-about-bg {
+    height: 100%;
+    background: rgb(180, 167, 201) url('../img/about_bg.jpg') no-repeat;
+    background-size: cover;
+
+    &__popup {
+        padding-top: 30px;
+
+        @include breakpoint(medium) {
+            padding-top: 75px;
+        }
+
+        color: white;
+
+        svg {
+            margin-bottom: 15px;
+
+            @include breakpoint(medium) {
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+.ba-about-main-text {
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px 0 20px 0;
+
+    @include breakpoint(medium) {
+        padding: 78px 10px 100px 10px;
+    }
+
+    .more {
+        color: #7d7a7c;
+        border: solid 1px #7d7a7c;
+        padding: 17px 52px;
+
+        &:hover {
+            color: black;
+            border-color: black;
+        }
+    }
+
+    p:last-of-type {
+        margin-bottom: 40px;
+
+        @include breakpoint(medium) {
+            margin-bottom: 93px;
+        }
+    }
+}
